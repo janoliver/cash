@@ -1,0 +1,11 @@
+"""
+Default settings for CLI interface 
+"""
+
+DEFAULT_SSH_TIMEOUT = 30
+DEFAULT_FANSIZE = 50
+DEFAULT_NODES_STRING = "@all"
+DEFAULT_OUT_FORMAT = "text"
+DEFAULT_JUMP_HOST = "jumphost"
+DEFAULT_FLATTEN = False
+DEFAULT_RUN_SHELL = True
