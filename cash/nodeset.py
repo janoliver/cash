@@ -8,7 +8,7 @@ and build the group and node topology tree (and rebalance it) are
 also included.
 """
 
-import collections
+import collections.abc
 import itertools
 import json
 import os
@@ -88,7 +88,7 @@ class NodeGroup(Node):
         # NodeSet, and iterables of each of those.
         self.nodeset_cache = None
 
-        if isinstance(obj, str) or not isinstance(obj, collections.Iterable):
+        if isinstance(obj, str) or not isinstance(obj, collections.abc.Iterable):
             obj = [obj]
 
         for o in obj:
@@ -234,7 +234,7 @@ class NodeSet(object):
             else:
                 self.nodeset |= obj.nodeset
             
-        elif isinstance(obj, collections.Iterable):
+        elif isinstance(obj, collections.abc.Iterable):
             for n in obj:
                 self.add(n, remove=remove)
                 
