@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='cascading-shell',
-    version='1.1',
+    version='1.2',
     packages=['cash'],
     license='GPL',
     author="Jan Oliver Oelerich",
